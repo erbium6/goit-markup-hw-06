@@ -50,9 +50,7 @@
             <li class="item">
               <a href="tel:+380961111111" class="contacts">
                 <svg class="icon-navigation" width="10px" height="16px">
-                  <use href="./images/icons.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
+                  <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
             </li>
           </ul>
         </nav>
@@ -454,6 +452,38 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          
+          <h3 class="form-title">Оставьте свои данные, мы вам перезвоним</h3>
+          
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name">
+          </div>
+          
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel">
+          </div>
+          
+          <div class="form-field">
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email">
+          </div>
+          
+          <div class="comment-field">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="6"  placeholder="Введите текст" style="margin: 0px; width: 448px; height: 120px;"></textarea>
+          </div>
+          
+          <div class="">
+            <input type="checkbox" name="policy" id="policy">
+            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+          </div>
+          
+          <button type="submit">Отправить</button>
+
+        </form>
         <button type="button" class="btn-close" data-modal-close>
           <svg class="btn-close-img" width="30px" height="30px">
             <use href="./images/icons2.svg#icon-close"></use>
