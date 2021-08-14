@@ -445,6 +445,17 @@
             </li>
           </ul>
         </div>
+        <div class="form-footer">
+          <form class="mail-form">
+          <h2 class="mail-form-title">Подпишитесь на рассылку</h2>
+          <div class="mail-form-footer">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <button class="form-btn-footer" type="submit">Подписаться<svg class="icon-send" width="24px" height="24px"><use href="./images/icons3.svg#icon-icon-send"></use></svg></button>
+          </div>
+          
+          </form>
+
+        </div>
       </div>
     </footer>
 
@@ -459,16 +470,22 @@
           <div class="form-field">
             <label for="name">Имя</label>
             <input type="text" name="name" id="name">
+            <svg class="form-img" width="12px" height="12px">
+              <use href="./images/icons3.svg#icon-name"></use></svg>
           </div>
           
           <div class="form-field">
             <label for="tel">Телефон</label>
             <input type="tel" name="tel" id="tel">
+            <svg class="form-img" width="13px" height="13px">
+              <use href="./images/icons3.svg#icon-tel"></use></svg>
           </div>
           
           <div class="form-field">
             <label for="email">Почта</label>
             <input type="email" name="email" id="email">
+            <svg class="form-img" width="15px" height="12px">
+              <use href="./images/icons3.svg#icon-mail"></use></svg>
           </div>
           
           <div class="comment-field">
@@ -476,17 +493,20 @@
             <textarea name="comment" id="comment" rows="6"  placeholder="Введите текст" style="margin: 0px; width: 448px; height: 120px;"></textarea>
           </div>
           
-          <div class="">
+          <div class="checkbox">
             <input type="checkbox" name="policy" id="policy">
-            <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+            <label for="policy">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a> </label>
           </div>
           
-          <button type="submit">Отправить</button>
+          
 
         </form>
+        
+        <button class="button-submit" type="submit">Отправить</button>
+        
         <button type="button" class="btn-close" data-modal-close>
-          <svg class="btn-close-img" width="30px" height="30px">
-            <use href="./images/icons2.svg#icon-close"></use>
+          <svg class="btn-close-img" width="11px" height="11px">
+            <use href="./images/icons3.svg#icon-close-btn"></use>
           </svg>
         </button>
       </div>
