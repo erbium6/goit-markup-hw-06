@@ -1039,7 +1039,7 @@ ul {
 }
 
 .form-img:hover,
-.form-img:focus{
+.form-img:focus {
   fill: var(--accent-text-color);
   cursor: pointer;
 }
@@ -1104,26 +1104,24 @@ ul {
   font-size: 14px;
   line-height: 2;
   letter-spacing: 3%;
- 
 }
 
 .policy-link {
   color: var(--accent-text-color);
 }
 
-.check-input{
+.check-input {
   position: absolute;
   left: 0%;
   bottom: 10%;
 
-   width: 16px;
+  width: 16px;
   height: 15px;
 
   appearance: none;
 }
 
-
-.icon-box{
+.icon-box {
   position: absolute;
   left: 0%;
   bottom: 10%;
@@ -1134,10 +1132,9 @@ ul {
   height: 15px;
 }
 
-.check-input:checked + .icon-box{
+.check-input:checked + .icon-box {
   background-image: url(../images/checkbox-on.svg);
 }
-
 
 .button-submit {
   margin-left: 164px;
@@ -1166,5 +1163,4 @@ ul {
 .button-submit:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  
 }
