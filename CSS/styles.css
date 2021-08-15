@@ -1038,6 +1038,12 @@ ul {
   fill: var(--accent-text-color);
 }
 
+.form-img:hover,
+.form-img:focus{
+  fill: var(--accent-text-color);
+  cursor: pointer;
+}
+
 .comment-field {
   height: 141px;
   margin-bottom: 20px;
@@ -1079,25 +1085,59 @@ ul {
 }
 
 .checkbox {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  height: 24px;
+
   margin-left: 16px;
   margin-bottom: 30px;
 }
 
 .checkbox label {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-family: Roboto;
   font-size: 14px;
   line-height: 2;
   letter-spacing: 3%;
+ 
 }
 
 .policy-link {
   color: var(--accent-text-color);
 }
 
-.checkbox input[type="checkbox"] {
+.check-input{
+  position: absolute;
+  left: 0%;
+  bottom: 10%;
+
+   width: 16px;
+  height: 15px;
+
+  appearance: none;
 }
+
+
+.icon-box{
+  position: absolute;
+  left: 0%;
+  bottom: 10%;
+
+  background-image: url(../images/checkbox-off.svg);
+
+  width: 16px;
+  height: 15px;
+}
+
+.check-input:checked + .icon-box{
+  background-image: url(../images/checkbox-on.svg);
+}
+
 
 .button-submit {
   margin-left: 164px;
@@ -1115,7 +1155,7 @@ ul {
   cursor: pointer;
   color: #ffffff;
   background-color: var(--accent-text-color);
-  box-shadow: rgba(0, 0, 0, 0, 15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
 
@@ -1125,5 +1165,6 @@ ul {
 .button-submit:hover,
 .button-submit:focus {
   background-color: #188ce8;
-  box-shadow: rgba(0, 0, 0, 0, 15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  
 }
